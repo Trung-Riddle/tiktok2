@@ -1,0 +1,13 @@
+.btn{
+    padding: 7px 20px;
+    border: none;
+    font-size: 17px;
+    &:hover{
+        cursor: pointer;
+        opacity: 0.9;
+    }
+}
+.primary{
+    background-color: #2671f4;
+    color: white;
+}
