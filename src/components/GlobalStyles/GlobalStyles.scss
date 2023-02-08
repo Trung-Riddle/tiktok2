@@ -1,0 +1,18 @@
+@import 'normalize.css';
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@300;400;500;600;700&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+$base-color: #c6538c;
+html {
+    font-size: 62.5%;
+}
+body{
+    font-family: 'Red Hat Display', sans-serif;
+    color: $base-color;
+    font-size: 1.6rem;
+    line-height: 1.5;
+    text-rendering: optimizeSpeed;
+}

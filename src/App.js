@@ -1,32 +1,18 @@
-import { Routes, Route, Link } from 'react-router-dom';
-import './App.css';
-import HomePage from './pages/Home';
-import NewsPage from './pages/News';
-import Contact from './pages/Contact';
-import Button from '~/components/Button';
+import { Fragment } from "react";
+import { Routes, Route, Link } from "react-router-dom";
+import { publicRoutes } from "./routes";
+import { DefaultLayout } from "./components/Layout";
 
 function App() {
   return (
     <div className="App">
-      <nav>
-        <ul>
-          <li>
-            <Link to='/'>Home</Link>
-          </li>
-          <li>
-            <Link to='/news'>News</Link>
-          </li>
-          <li>
-            <Link to='/contact'>Contact</Link>
-          </li>
-        </ul>
-      </nav>
       <Routes>
-        <Route path='/' element={<HomePage></HomePage>} />
-        <Route path='/news' element={<NewsPage></NewsPage>} />
-        <Route path='/contact' element={<Contact></Contact>} />
+        {publicRoutes.map((route, index) => {
+          const Layout = route.layout === null ? Fragment : (route.layout || DefaultLayout)
+          const Page = route.component
+          return <Route key={index} path={route.path} element={<Layout><Page/></Layout>} />
+        })}
       </Routes>
-      <Button primary valueBtn={'click me'}/>
     </div>
   );
 }
