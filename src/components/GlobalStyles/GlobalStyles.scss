@@ -2,17 +2,32 @@
 @import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@300;400;500;600;700&display=swap');
 
 * {
+    margin: 0;
+    margin: 0;
     box-sizing: border-box;
 }
+:root{
+    --base-color: #c6538c;
+    --black: #000;
+    --default-layout-header-height: 60px;
+    --default-layout-width: 1150px;
+}
 
-$base-color: #c6538c;
 html {
     font-size: 62.5%;
 }
 body{
     font-family: 'Red Hat Display', sans-serif;
-    color: $base-color;
+    color: var(--base-color);
     font-size: 1.6rem;
     line-height: 1.5;
     text-rendering: optimizeSpeed;
+}
+input, button, [tabindex] {
+    outline: none;
+    border: none;
+}
+a[href] {
+    color: var(--base-color);
+    text-decoration: none;
 }
