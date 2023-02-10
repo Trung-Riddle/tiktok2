@@ -16,13 +16,11 @@ $search-btn-width: 52px;
     align-items: center;
     justify-content: space-between;
 }
-
-.logo{
-
+.search, .search-result {
+    width: 361px;
 }
 .search{
     position: relative;
-    width: 361px;
     background-color: rgba(22, 24, 35, 0.06);
     height: $search-height;
     padding-left: 16px;
@@ -54,6 +52,11 @@ $search-btn-width: 52px;
         border-color: rgba(128, 128, 128, 0.181);
     }
 }
+.search-title {
+    font-size: 1.4rem;
+    color: #666;
+    
+}
 
 .clear,
 .loading{
@@ -73,3 +76,4 @@ $search-btn-width: 52px;
         background-color: rgba(22, 24, 35, 0.065);
     }
 }
+
