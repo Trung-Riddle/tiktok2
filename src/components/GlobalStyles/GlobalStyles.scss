@@ -7,7 +7,9 @@
     box-sizing: border-box;
 }
 :root{
+    --primary: rgba(254, 44, 85, 1);
     --base-color: #333;
+    --base-color-30: #333333cc;
     --black: #000;
     --check-icon: rgb(32, 213, 236);
     --default-layout-header-height: 60px;

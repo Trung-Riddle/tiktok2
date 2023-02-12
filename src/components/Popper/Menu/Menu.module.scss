@@ -1,0 +1,24 @@
+
+.menu-items {
+    width: 240px;
+    .btn-item {
+        margin-left: 0;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 10px;
+        color: var(--base-color-30);
+        font-size: 1.5rem;
+        font-weight: 700;
+        width: 100%;
+        border-radius: 0;
+        padding: 11px 16px;
+        &:hover {
+            background-color: rgba(22, 24, 35, 0.03);
+        }
+    }
+}
+.menu-popper {
+    width: 100%;
+    padding-bottom: 8px;
+}

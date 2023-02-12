@@ -4,4 +4,45 @@
     min-width: 100px;
     padding: 9px 16px;
     border-radius: 4px;
+    cursor: pointer;
+    transition: all .1s linear;
+    border: 1px solid transparent;
+    background-color: transparent;
+    + .btn {
+        margin-left: 12px;
+    }
+    &:active {
+        opacity: 0.8;
+    }
 }
+// btn types
+.primary {
+    background-color: var(--primary);
+    color: #fff;
+    &:hover {
+        color: #ffffffb9;
+    }
+}
+.outline {
+    color: var(--primary);
+    border-color: currentColor;
+    &:hover {
+        background-color: rgba(254, 44, 85, 0.06);
+    }
+}
+.text {
+    &:hover {
+        text-decoration: underline;
+    }
+}
+
+// button size
+.small {
+    min-width: 88px;
+    padding: 4px 16px;
+}
+.large {
+    min-width: 148px;
+    padding: 14px 16px;
+}
+
